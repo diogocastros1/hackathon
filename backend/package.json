@@ -4,12 +4,16 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "start": "json-server --watch db.json --port 3001"
+    "start": "concurrently \"python.exe traffic_analyzer_v2.py\" \"node /saveData.js\" \"json-server --watch db.json --port 3001\" ",
+    "test": "json-server --watch db.json --port 3001"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "dependencies": {
     "json-server": "^0.17.3"
+  },
+  "devDependencies": {
+    "concurrently": "^8.0.1"
   }
 }

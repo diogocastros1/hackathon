@@ -6,8 +6,9 @@ aside.logo {
 }
 
 aside .logo img {
-    padding: 30px;
-    width: 60%;
+    box-sizing: border-box;
+    padding: 50px;
+    width: 100%;
 }
 
 @media(max-width:576px) {
@@ -16,6 +17,6 @@ aside .logo img {
     }
 
     aside.logo img {
-        width: 25vh;
+        width: 100%;
     }
 }
